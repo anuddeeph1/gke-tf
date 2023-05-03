@@ -20,5 +20,5 @@ resource "google_compute_firewall" "allow-kyverno" {
     ports    = ["9443"]
   }
 
-  source_ranges = ["10.0.0.0/18"]
+  source_ranges = ["10.0.0.0/18","10.48.0.0/14","10.52.0.0/20","172.16.0.0/28"]
 }
